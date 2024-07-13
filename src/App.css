@@ -1,42 +1,236 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+/* Hero and Section */
+.hero {
+  background-color: rgba(0, 0, 0, 0.937);
+  width: 100%;
+  height: 900px;
+  position: relative;
+  overflow: hidden;
+  
+  
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.top-line{
+  z-index: 2;
+  background-color: #571DB5;
+  width: 148px;
+  height: 8px;
+  position: absolute;
+  top: calc(42% - 50px);
+  left: 20%;
+  transform: translateX(-50%)
+ 
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.text{
+  z-index: 2;
+  color: white;
+  font-family: "Poppins", 'sans-serif';
+  font-weight: 700;
+  font-style: normal;
+  font-size: 70px;
+  position:absolute;
+  top: 42%;
+  bottom: 50%;
+  transform: translate(42%,-50%);
+}
+.sub-text {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+.hero img{
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  top: -1rem;
+  width: 61rem;
+  margin-right: 1rem;
+  object-fit: cover; /* Maintain aspect ratio and cover the area */
+  height: auto;
+
+}
+.move-down{
+  z-index: 2;
+  width: 4.125rem;
+  height: 4.125rem;
+  background-color: #571DB5;
+  position: absolute;
+  bottom: 0;
+  margin: 4rem;
+  border-radius: 5rem;
+  display: flex;
+  justify-content: center;
+  
+  align-items: center;
+}
+
+.section {
+  background-color: white;
+  width: 100%;
+  height: 914px;
+}
+
+/* Header */
+.header {
+  margin: 2rem 6rem;
+  margin-right: 13rem;
+  margin-left: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically in the center */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.myname {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+/* Menu */
+.menu {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  font-size: 16px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .header {
+    margin: 1rem 2rem;
+    
   }
-  to {
-    transform: rotate(360deg);
+
+  .menu {
+    width: 60%;
+  }
+
+  .top-line {
+    width: 120px; /* Adjust top line width for smaller screens */
+  }
+
+  .text {
+    font-size: 60px; /* Adjust text size for smaller screens */
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media (max-width: 992px) {
+  .header {
+    margin: 1rem;
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: flex-start;
+  }
+
+  .menu {
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 1rem;
+  }
+
+  .myname {
+    font-size: 1.5rem; /* Adjust font size */
+  }
+
+  .top-line {
+    display: 110px; /* Hide top line on smaller screens if needed */
+  }
+
+  .text {
+    font-size: 50px;
   }
 }
 
-.card {
-  padding: 2em;
+@media (max-width: 768px) {
+  .header {
+    margin: 1rem;
+  }
+
+  .menu {
+    width: 100%;
+    justify-content: space-between;
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+  .top-line {
+    display: 100px; /* Hide top line on smaller screens if needed */
+  }
+
+  .text {
+    font-size: 40px;
+   
+  }
+
 }
 
-.read-the-docs {
-  color: #888;
+@media (max-width: 576px) {
+  .header {
+    margin: 0.5rem;
+  }
+
+  .menu {
+    flex-direction: column; /* Stack menu items vertically */
+    align-items: flex-start;
+  }
+
+  .menu p {
+    margin-bottom: 0.5rem; /* Add margin between menu items */
+  }
+
+  .myname {
+    font-size: 1.2rem; /* Further adjust font size */
+  }
+  .hero img{
+    position: absolute;
+    right:-10rem;
+    
+    top: 2px;
+    width: 61rem;
+    scale: 1;
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+    height: auto;
+    
+  
+  }
+
+  .top-line {
+    /* Hide top line on smaller screens if needed */
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    top: 25%;
+    left: 12%;
+    transform: translateX(-20%);
+  }
+
+
+  .text {
+    font-size: 40px;
+        transform: translate(10%, 50%);
+        left: 0;
+        position: absolute;
+        top: 0;
+  }
+  .sub-text{
+    font-size: 8px;
+  }
+  .move-down{
+    width: 3.125rem;
+  height: 3.125rem;
+  margin: 2rem;
+  }
 }
