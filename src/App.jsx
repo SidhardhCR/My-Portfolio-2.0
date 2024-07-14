@@ -1,14 +1,14 @@
 
 import './App.css'
 import Hero from './components/Hero'
-import Sample from './components/Sample'
+import AboutMe from './components/AboutMe'
 function App() {
   
 
   return (
     <>
       <Hero></Hero>
-      <Sample></Sample>
+      <AboutMe></AboutMe>
     </>
   )
 }

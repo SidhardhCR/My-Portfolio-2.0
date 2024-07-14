@@ -27,6 +27,15 @@
  
 }
 
+.popp{
+  font-family: "Poppins", 'sans-serif';
+}
+.popp-bold{
+  font-family: "Poppins", 'sans-serif';
+  font-weight: bold;
+}
+
+
 .text{
   z-index: 2;
   color: white;
@@ -45,6 +54,15 @@
   font-optical-sizing: auto;
   font-weight: lighter;
   font-size: 14px;
+}
+
+.mont{
+  font-family: "Montserrat",sans-serif;
+}
+
+.mont-bold{
+  font-family: "Montserrat",sans-serif;
+  font-weight: bolder;
 }
 
 .hero img{
