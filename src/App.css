@@ -35,6 +35,12 @@
   font-weight: bold;
 }
 
+.circle{
+  width: 105px;
+  height: 105px;
+  border-radius:5rem ;
+  background-color: #571DB5;
+}
 
 .text{
   z-index: 2;
