@@ -3,7 +3,7 @@ import React from 'react';
 function Footer() {
   return (
     <div className="bg-black-500/[0.93]">
-      <div className="p-8 md:p-32 md:pb-10">
+      <div className="p-8 md:p-32 md:pb-10 reveal">
         <div className="flex flex-col md:flex-row justify-between">
           <h3 className="mont text-white font-bold text-lg md:text-2xl">
             <span className="mont text-[#571DB5]">/ </span>CONTACT ME
