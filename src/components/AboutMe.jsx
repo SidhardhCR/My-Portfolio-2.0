@@ -3,7 +3,7 @@ import React from 'react';
 function AboutMe() {
   return (
     <div className="bg-[#EFEDED]">
-      <div className="p-8 md:p-32">
+      <div className="p-8 md:p-32 ">
         <h3 className="mont text-black font-bold text-lg md:text-2xl">
           <span className="mont text-[#571DB5]">/ </span>ABOUT ME
         </h3>
