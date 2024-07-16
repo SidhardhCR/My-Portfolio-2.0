@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
   return (
-    <div className="bg-black-500/[0.93]">
+    <div className="bg-black-500/[0.93]" id='contact'>
       <div className="p-8 md:p-32 md:pb-10 reveal">
         <div className="flex flex-col md:flex-row justify-between">
           <h3 className="mont text-white font-bold text-lg md:text-2xl">
@@ -53,10 +53,10 @@ function Footer() {
               <h5 className="mont text-white text-lg md:text-[20px]">Email me:</h5>
               <br />
               <div className="flex md:flex-row gap-2 justify-center md:justify-start">
-                <h5 className="mont text-white text-lg md:text-[20px] underline decoration-[#571DB5] underline-offset-[15px]">
+                <a href="mailto:sidhardhcr007@gmail.com"><h5 className="mont text-white text-lg md:text-[20px] underline decoration-[#571DB5] underline-offset-[15px]">
                   sidhardhcr007@gmail.com
-                </h5>
-                <span className="flex items-center">
+                </h5></a>
+                <span className="flex items-center ">
                   <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 32 32">
                     <path fill="#571DB5" d="m18 6l-1.43 1.393L24.15 15H4v2h20.15l-7.58 7.573L18 26l10-10z"></path>
                   </svg>

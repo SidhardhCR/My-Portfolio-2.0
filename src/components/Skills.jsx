@@ -85,7 +85,7 @@ function Skills() {
   };
 
   return (
-    <div className='bg-black-500/[0.93] h-screen'>
+    <div className='bg-black-500/[0.93] h-screen' id='skill'>
       <div className="p-8 md:p-32 reveal">
         <h3 className="mont text-white font-bold text-lg md:text-2xl">
           <span className="mont text-[#571DB5]">/ </span>MY SKILLS
