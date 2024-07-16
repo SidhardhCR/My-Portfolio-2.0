@@ -24,7 +24,7 @@ const Navbar = () => {
           </h1>
         </Link>
         <ul style={{ color: 'white' }} className='mont hidden sm:flex'>
-          <li className='p-4 hover:underline decoration-[#571DB5] underline-offset-[15px]  '>
+          <li className='p-4  hover:underline decoration-[#571DB5] underline-offset-[15px] '>
             <Link to='#home' smooth>Home</Link>
           </li>
           <li className='p-4 hover:underline decoration-[#571DB5] underline-offset-[15px]'>
